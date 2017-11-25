@@ -1,0 +1,77 @@
+
+tr{
+    text-align: center;
+    
+}
+table{
+    border: 2.5px solid silver;
+    text-align: center;
+    font-family: "caffe";
+    margin: auto;
+    border-radius: 10px;
+    padding: 2px; 
+    width: 15%; 
+    background: white;
+}
+td{
+    border:none;
+}
+th{
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 28px;
+    color: white;  
+    border: none;  
+    font-family: roboto;
+    margin-bottom: 30px;
+}
+
+
+@font-face{
+    font-family: "caffe";
+    src: url("fonts/caffe.ttf")
+}
+@font-face{
+    font-family: "roboto";
+    src: url("fonts/Roboto-Thin.ttf")
+}
+
+
+body{
+   
+}
+input{
+    border-radius: 100px;
+    border: 2.5px solid silver;
+    width: 20%;
+    padding: 2%;
+    background-color: skyblue;
+    color:white;
+    font-family: "caffe";
+    font-size: 20px;
+}
+input:hover{
+    background-color: white;
+    color:black;
+}
+#texto{
+    padding: 5%;
+    width: 75%;
+}
+#texto:hover{
+    background-color: white;
+    color:black;
+}
+#texto2{
+    padding: 3%;
+    width: 35%;
+    text-align: center;
+}
+#texto2:hover{
+    background-color: white;
+    color:black;
+}
+#erase{
+    width: 40%;
+}

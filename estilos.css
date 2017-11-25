@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja1{
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header{
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+header div img{
+    width: 100%;
+    margin: auto;
+    align-content: center;
+}
+nav {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    background-color: cornflowerblue;
+    color: white;
+    
+}
+
+nav span{
+    margin-right: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+    flex-grow: 1;
+    padding: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+nav a:hover{
+    background-color: bisque;
+}
+
+
+
+.principal
+{
+    background-color: azure;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 65%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+ }
+.principal article{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.principal article #carro{
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+.principal article .titulo{
+    margin-top: 30px;
+}
+
+.principal article .parrafos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside
+{
+    flex: 1 1 7%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 5px;
+    background-color:darkblue;
+    color: white;
+    padding: 20px;
+}
+
+aside p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px;
+}
+footer{
+    margin: 5px;
+    text-align:right;
+    width: 100%;
+    background-color: #555;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer p{
+    margin: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+footer .social{
+    background-color: #555;
+}
+
+footer .social a{
+    padding: 15px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+article .repuestos{
+    width: 20%;
+    height: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+@media screen and (max-width:800px){
+    .caja1{
+        flex-direction: column;
+    }
+    
+    header{
+        flex-direction: column;
+    }
+    
+    aside p{
+        flex-direction: column;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    aside .widget{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    header{
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    aside{
+        flex-direction: column;
+    }
+    
+    footer{
+        justify-content: space-around;
+    }
+}
